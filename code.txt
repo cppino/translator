@@ -1,0 +1,38 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+string author = "MOROZ";
+
+int main()
+{
+if (author == "MOROZ")
+{
+while (1 == 1)
+{
+string u = "2fjjccj";
+system("cls");
+cout « "GOOGLE translate link generator by " « author « ".\n(Save HTML page to download).\n";
+string lang = "auto";
+string lang2;
+string text = "text";
+cout « "Word = ";
+cin » text; /*
+cout « "lang of text = ";
+cin » lang;*/
+cout « "Language to translate = ";
+cin » lang2;
+string save = "D:\My Documents\Downloads\Translate(" + text + " to " + lang2 + ").html";
+string adress = "http://translate.google.ru/translate_a/t?client=x&text=" + text + "&hl=en&sl=" + lang + "&tl=" + lang2;
+string html = "<html><a href=" + adress + "><strong> Downolad translate(" + text + "). </strong></a></html>";
+ofstream out(save);
+out « html;
+cout « "\nYour translate link :\n\n"
+« adress « "\n\nType something to retry.\n";
+out.close();
+while (u == "2fjjccj")
+{
+cin » u;
+};
+};
+};
+};
